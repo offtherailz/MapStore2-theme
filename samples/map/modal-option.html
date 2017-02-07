@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Modal Options MapStore2</title>
 <meta name="author" content="GeoSolutions & Chef Studio" />
 <link rel="shortcut icon" href="favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
-<link href="../../theme/default/css/css.css" rel="stylesheet">
-<link href="../../theme/default/css/custom.css" rel="stylesheet">
+<link href="../../theme/default/css/less/theme.css" rel="stylesheet">
 <link href="../../theme/default/css/font.css" rel="stylesheet">
 <link href="../../theme/default/css/map.css" rel="stylesheet">
 
@@ -30,7 +30,7 @@
    		</button></a>
         
         <ul class="dropdown-menu">
-          <li class="bar">OPTIONS
+          <li class="bar">OPTIONS</li>
 
           <li><button data-toggle="modal" data-target="#print"><span class="glyphicon glyphicon-print pull-left option-icon"></span>Active modal</button></li>
          
@@ -52,9 +52,9 @@
           <p class="modal-title">OPTIONS</p>
         </div>
         
-        <div class="modal-body">
+        <div class="modal-body list-group">
           <ul>
-           <li class="list-with-button padding15">
+           <li class="list-with-button padding-base">
             LANGUAGES
             
                    <label id="language" class="float-right label-scale">
@@ -68,7 +68,7 @@
           </li>
           <li class="divider"></li>
           
-          <li class="list-with-button padding15">
+          <li class="list-with-button padding-base">
             COORDINATES INDICATOR <br />
             
                    <label id="language" class="float-right label-scale">
@@ -79,13 +79,15 @@
             <option>EPSG:900913</option>
   		</select>
         </label>
-        <button type="button" class=" btn btn-primary float-right btn-sm bottom15">
+        <div class="floatstop"></div>
+        <button type="button" class=" btn btn-primary float-right btn-sm margin10-top">
     		SHOW COORDINATES
    		   </button>
+           <div class="floatstop"></div>
           </li>
           <li class="divider"></li>
           
-          <li class="list-with-button padding15">
+          <li class="list-with-button padding-base">
             GET FEATURE INFO FORMAT <br />
             
                    <label id="language" class="float-right label-scale">
@@ -96,10 +98,11 @@
             <option>TEXT</option>
   		</select>
         </label>
+        <div class="floatstop"></div>
           </li>
           <li class="divider"></li>
           
-          <li class="padding15">
+          <li class="padding-base">
           VERSION
           <div class="float-right">v 2.1.15</div>
           </li>

@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Layers Tool MapStore2</title>
 <meta name="author" content="GeoSolutions & Chef Studio" />
 <link rel="shortcut icon" href="favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
-<link href="../../theme/default/css/css.css" rel="stylesheet">
-<link href="../../theme/default/css/custom.css" rel="stylesheet">
+<link href="../../theme/default/css/less/theme.css" rel="stylesheet">
 <link href="../../theme/default/css/font.css" rel="stylesheet">
 <link href="../../theme/default/css/map.css" rel="stylesheet">
 
@@ -18,10 +18,13 @@
 <body>
 <div class="sidebar shadow">
 	<div class="close-sidebar float-left">
-    <button type="button" class="close-sidebar btn-default" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
+     <button type="button" class="btn btn-default square-button no-border">
+    		<div class="glyphicon glyphicon-1-close"></div>
+     	</button>
 	</div>
     
     <!-- 3 buttons of work -->
+    <div class="nav-working">
     <ul class="float-right">
         
         	<li>
@@ -43,66 +46,164 @@
         	</li>
             
      </ul>
+     </div><!-- nav working -->
     <div class="working floatstop">
     	 <div class="title-tool">LAYERS</div>
-       
-        <ul class="list-group">
+      
+        <div class="list-group ">
         
-            <li class="divider"></li>
-            
-            <li class="list-group-item">
-            <button class="btn btn-default square-button-md no-border working-eye" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-eye-open"></span></button>
-            <div class="layer-name"> Layer</div>
-            <button class="btn btn-default square-button-md no-border working-option" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-cog"></span></button>
-            <button class="btn btn-default square-button-md no-border working-adjust" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-adjust"></span></button>
-            </li>
-            
-             <li class="divider"> </li>
-            
-             <li class="list-group-item">
-            <button class="btn btn-default square-button-md no-border working-eye" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-eye-open"></span></button>
-            <button class="btn btn-default square-button-md no-border working-folder" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-folder-close"></span></button>
-            <div class="layer-name"> Layer</div>
-            <button class="btn btn-default square-button-md no-border working-option" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-cog"></span></button>
-            <button class="btn btn-default square-button-md no-border working-adjust" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-adjust"></span></button>
-            </li>
-            
-             <li class="list-group-item">
-            <button class="btn btn-default square-button-md no-border working-eye" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-eye-open"></span></button>
-            <div class="layer-name"> Layer</div>
-            <button class="btn btn-default square-button-md no-border working-option" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-cog"></span></button>
-            <button class="btn btn-default square-button-md no-border working-adjust" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-adjust"></span></button>
-            </li>
-            
-             <li class="list-group-item">
-            <button class="btn btn-default square-button-md no-border working-eye" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-eye-open"></span></button>
-            <div class="layer-name"> Layer</div>
-            <button class="btn btn-default square-button-md no-border working-option" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-cog"></span></button>
-            <button class="btn btn-default square-button-md no-border working-adjust" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-adjust"></span></button>
-            </li>
-            
-            <li class="divider"> </li>
-            
-             <li class="list-group-item">
-            <button class="btn btn-default square-button-md no-border working-eye" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-eye-open"></span></button>
-            <div class="layer-name"> Layer</div>
-            <button class="btn btn-default square-button-md no-border working-option" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-cog"></span></button>
-            <button class="btn btn-default square-button-md no-border working-adjust" data-toggle="#" data-target="#"><span class="glyphicon glyphicon-adjust"></span></button>
-            </li>
-            
-            
-        </ul>
-            
-            <li class="divider"></li>
-            
-            <li class="list-group-item">
-            <button class="btn btn-sm btn-primary float-right" data-toggle="#" data-target="#">ADD LAYER</button>
+<ul>
+           
+	<li>  		 <a href="#">LAYER 1</a>
+    
+   		 <div class="map-editing-tools bottom5">
+         
+		 <button type="button" class="btn btn-danger float-right square-button-md ">
+    				<div class="glyphicon glyphicon-remove-circle"></div>
+    	</button>
+                
+                <div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-fullscreen"></div>
+    			</button>
+                
+    				<div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-1-menu-manage"></div>
+    			</button>
+		</div>
+    
+    </li>
+    
+        <div class="divider"></div>
+	
+    <li>         <a href="#"> <span class="glyphicon glyphicon-folder-open pull-left option-icon"></span>FOLDER 1</a>
+    
+     <div class="map-editing-tools bottom5">
+		  <button type="button" class="btn btn-danger float-right square-button-md ">
+    				<div class="glyphicon glyphicon-remove-circle"></div>
+    			</button>
+                
+    				<div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-1-menu-manage"></div>
+    			</button>
+		</div>
+        
+        		<ul>
+                		<div class="divider"></div>  
+                         
+                		<li>  		 <a href="#">LAYER 3</a>
+    
+   					 	<div class="map-editing-tools bottom5">
+		 				<button type="button" class="btn btn-danger float-right square-button-md ">
+    				<div class="glyphicon glyphicon-remove-circle"></div>
+    					</button>
+                
+                <div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-fullscreen"></div>
+    			</button>
+                
+    				<div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-1-menu-manage"></div>
+    			</button>
+                        
+						</div>
+                        
+                        <div class="divider"></div>   
+                        
+    
+   						</li>
+    
+    					<li>  		 <a href="#">LAYER 4</a>
+    
+   		 				<div class="map-editing-tools bottom5">
+		 				<button type="button" class="btn btn-danger float-right square-button-md ">
+    				<div class="glyphicon glyphicon-remove-circle"></div>
+    				</button>
+                
+                <div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-fullscreen"></div>
+    			</button>
+                
+    				<div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-1-menu-manage"></div>
+    			</button>
+						</div>
+    
+    					</li>
+        		</ul>
+     </li>
+        
+        <div class="divider"></div>    
+	<li>        <a href="#"> <span class="glyphicon glyphicon-folder-close pull-left option-icon"></span>FOLDER2</a>
+    
+    <div class="map-editing-tools bottom5">
+		 <button type="button" class="btn btn-danger float-right square-button-md ">
+    				<div class="glyphicon glyphicon-remove-circle"></div>
+    	</button>
+                
+                <div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-fullscreen"></div>
+    			</button>
+                
+    				<div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-1-menu-manage"></div>
+    			</button>
+		</div>
+    
+    </li>    
+        <div class="divider"></div>   
+         
+	<li>        <a href="#"> LAST LAYER</a>
+    
+     <div class="map-editing-tools bottom5">
+		 <button type="button" class="btn btn-danger float-right square-button-md ">
+    				<div class="glyphicon glyphicon-remove-circle"></div>
+    	</button>
+                
+                <div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-fullscreen"></div>
+    			</button>
+                
+    				<div class="divider-edit float-right"></div>
+                    
+    			<button type="button" class="btn btn-primary float-right square-button-md ">
+    				<div class="glyphicon glyphicon-1-menu-manage"></div>
+    			</button>
+		</div>
+    
+    </li>
+        
+       
+        <div class="divider"></div>
 
-        </ul>
-    	
-    </div><!-- close working -->
+        
+</ul> 
+        
+        </div> <!-- list group -->
 
-</div>
+
+	</div>
+
+
     
 
 

@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Homepage MapStore2</title>
 <meta name="author" content="GeoSolutions & Chef Studio" />
 <link rel="shortcut icon" href="favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Slab" rel="stylesheet">
 
-<link href="../../theme/default/css/css.css" rel="stylesheet">
-<link href="../../theme/default/css/custom.css" rel="stylesheet">
+<link href="../../theme/default/css/less/theme.css" rel="stylesheet">
 <link href="../../theme/default/css/font.css" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -20,7 +20,7 @@
 
  <!--tool work button | logo mapstore -->
   <div class="navbar-header">
-   <img class="customer-logo" src="img/geosolutions-logo.png" height="36"/>
+   <img class="customer-logo" src="img/geosolutions-logo.png"/>
   </div>
   
   <!--menu search account-->
@@ -31,21 +31,23 @@
     <li class="dropdown">
         
          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-         <span class="padding10-right">LOG IN</span>
-        <button type="button" class="btn btn-lg btn-primary square-button">
+         LOG IN
+        <button type="button" class="btn btn-primary square-button">
     		<div class="glyphicon glyphicon-user"></div>
    		</button></a>
         
         <ul class="dropdown-menu">
           <li class="bar">ACCOUNT
-           <button type="button" class="close close-xs" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
+           <button type="button" class="close" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
           </li>
           <li><a href="#">CHANGE PASSWORD</a></li>
           <li class="divider"></li>
-          <li class="list-with-button"><span class="padding15"> Administrator</span>
-           <button type="button" class=" btn btn-primary float-right button-custom">
+          <li class="padding-base"> Administrator
+         
+           <button type="button" class=" btn btn-sm btn-primary float-right">
     		LOG OUT
-   		   </button></a>
+   		   </button></li>
+           
           </li>
         </ul>
     </li>  
@@ -92,10 +94,11 @@
 <div class="row">
         <a href="#">
 		   <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">		
-           	<div class="map-thumb">
+           	<div class="map-thumb map-thumb-bg">
                    
              	<div class="map-title bg-primary">SUBWAY STATIONS</div>
-       					<div class="map-editing-tools">
+       					<div class="map-editing-tools-container">
+                        <div class="map-editing-tools">
             	
                         <button type="button" class="btn btn-primary square-button-md float-left">
     		            <div class="glyphicon glyphicon-chevron-right"></div>
@@ -116,17 +119,19 @@
      					</button>
        					 
                          </div><!-- close map editing tool -->   
+                          </div>     
                              
-			</div> <!-- close map-thumb -->      
+			</div> <!-- close map-thumb map-thumb-bg -->      
           </div><!-- close col --> 
         </a> 
          
          <a href="#">
 		   <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">		
-           	<div class="map-thumb">
+           	<div class="map-thumb map-thumb-bg">
                    
              	<div class="map-title bg-primary">SUBWAY STATIONS</div>
-       					<div class="map-editing-tools">
+       					<div class="map-editing-tools-container">
+                        <div class="map-editing-tools">
             	
                         <button type="button" class="btn btn-primary square-button-md float-left">
     		            <div class="glyphicon glyphicon-chevron-right"></div>
@@ -147,17 +152,19 @@
      					</button>
        					 
                          </div><!-- close map editing tool -->   
+                          </div>    
                              
-			</div> <!-- close map-thumb -->      
+			</div> <!-- close map-thumb map-thumb-bg -->      
           </div><!-- close col --> 
         </a>
         
          <a href="#">
 		   <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">		
-           	<div class="map-thumb">
+           	<div class="map-thumb map-thumb-bg">
                    
              	<div class="map-title bg-primary">SUBWAY STATIONS</div>
-       					<div class="map-editing-tools">
+       					<div class="map-editing-tools-container">
+                        <div class="map-editing-tools">
             	
                         <button type="button" class="btn btn-primary square-button-md float-left">
     		            <div class="glyphicon glyphicon-chevron-right"></div>
@@ -178,17 +185,19 @@
      					</button>
        					 
                          </div><!-- close map editing tool -->   
+                          </div>     
                              
-			</div> <!-- close map-thumb -->      
+			</div> <!-- close map-thumb map-thumb-bg -->      
           </div><!-- close col --> 
         </a>
         
          <a href="#">
 		   <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">		
-           	<div class="map-thumb">
+           	<div class="map-thumb map-thumb-bg">
                    
              	<div class="map-title bg-primary">SUBWAY STATIONS</div>
-       					<div class="map-editing-tools">
+       					<div class="map-editing-tools-container">
+                        <div class="map-editing-tools">
             	
                         <button type="button" class="btn btn-primary square-button-md float-left">
     		            <div class="glyphicon glyphicon-chevron-right"></div>
@@ -209,17 +218,19 @@
      					</button>
        					 
                          </div><!-- close map editing tool -->   
+                          </div>     
                              
-			</div> <!-- close map-thumb -->      
+			</div> <!-- close map-thumb map-thumb-bg -->      
           </div><!-- close col --> 
         </a>
         
          <a href="#">
 		   <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">		
-           	<div class="map-thumb">
+           	<div class="map-thumb map-thumb-bg">
                    
              	<div class="map-title bg-primary">SUBWAY STATIONS</div>
-       					<div class="map-editing-tools">
+       					<div class="map-editing-tools-container">
+                        <div class="map-editing-tools">
             	
                         <button type="button" class="btn btn-primary square-button-md float-left">
     		            <div class="glyphicon glyphicon-chevron-right"></div>
@@ -240,17 +251,20 @@
      					</button>
        					 
                          </div><!-- close map editing tool -->   
+                          </div>     
                              
-			</div> <!-- close map-thumb -->      
+			</div> <!-- close map-thumb map-thumb-bg -->      
           </div><!-- close col --> 
         </a>
         
          <a href="#">
 		   <div class="col col-lg-3 col-md-4 col-sm-6 col-xs-12">		
-           	<div class="map-thumb">
+           	<div class="map-thumb map-thumb-bg">
                    
              	<div class="map-title bg-primary">SUBWAY STATIONS</div>
-       					<div class="map-editing-tools">
+       					
+                        <div class="map-editing-tools-container">
+                        <div class="map-editing-tools">
             	
                         <button type="button" class="btn btn-primary square-button-md float-left">
     		            <div class="glyphicon glyphicon-chevron-right"></div>
@@ -271,8 +285,9 @@
      					</button>
        					 
                          </div><!-- close map editing tool -->   
-                             
-			</div> <!-- close map-thumb -->      
+                          </div>  
+                           
+			</div> <!-- close map-thumb map-thumb-bg -->      
           </div><!-- close col --> 
         </a>  
         

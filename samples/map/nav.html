@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Navbar MapStore2</title>
 <meta name="author" content="GeoSolutions & Chef Studio" />
 <link rel="shortcut icon" href="favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
-<link href="../../theme/default/css/css.css" rel="stylesheet">
-<link href="../../theme/default/css/custom.css" rel="stylesheet">
+<link href="../../theme/default/css/less/theme.css" rel="stylesheet">
 <link href="../../theme/default/css/font.css" rel="stylesheet">
 <link href="../../theme/default/css/map.css" rel="stylesheet">
 
@@ -65,16 +65,20 @@
 
         <ul class="dropdown-menu">
           <li class="bar">OPTIONS
-          <button type="button" class="close close-xs" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
+          <button type="button" class="close" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
           </li>
           <li><a href="#"> <span class="glyphicon glyphicon-home pull-left option-icon"></span>BACK TO HOME</a></li>
           <li class="divider"></li>
-          <li><button data-toggle="modal" data-target="#print"><span class="glyphicon glyphicon-print pull-left option-icon"></span>PRINT/SCREENSHOT</button></li>
+          
+          <li><a href="#"> <span class="glyphicon glyphicon-print pull-left option-icon"></span>PRINT/SCREENSHOT</a></li>
           <li class="divider"></li>
+          
           <li><a href="#"><span class="glyphicon glyphicon-share-alt pull-left option-icon"></span>SHARE</a></li>
           <li class="divider"></li>
+          
           <li><a href="#"><span class="glyphicon glyphicon-cog pull-left option-icon"></span>OPTIONS</a></li>
           <li class="divider"></li>
+          
           <li><a href="#"><span class="glyphicon glyphicon-question-sign pull-left option-icon"></span>HELP</a></li>
         </ul>
     </li>
@@ -91,14 +95,16 @@
 
         <ul class="dropdown-menu">
           <li class="bar">ACCOUNT
-           <button type="button" class="close close-xs" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
+           <button type="button" class="close" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
           </li>
           <li><a href="#">CHANGE PASSWORD</a></li>
           <li class="divider"></li>
-          <li class="list-with-button"><span class="padding15"> Administrator</span>
+          <li class="padding-base"> Administrator
+         
            <button type="button" class=" btn btn-sm btn-primary float-right">
     		LOG OUT
-   		   </button></a>
+   		   </button></li>
+           
           </li>
         </ul>
     </li>
@@ -149,13 +155,13 @@
     <div class="divider-map"></div>
 
     <button type="button" class="btn btn-primary square-button ">
-    <div class="glyphicon glyphicon-1-screen-back"></div>
+    <div class="glyphicon glyphicon-1-history-backward"></div>
     </button>
 
     <div class="divider-map"></div>
 
     <button type="button" class="btn btn-primary square-button ">
-    <div class="glyphicon glyphicon-1-screen-forward"></div>
+    <div class="glyphicon glyphicon-1-history-forward"></div>
     </button>
 
     <div class="divider-map"></div>
@@ -217,10 +223,6 @@
   		</select>
         </label>
     	</div>
-
-        <div class="line">
-   	    100km
-        </div>
 
 	</div>
 

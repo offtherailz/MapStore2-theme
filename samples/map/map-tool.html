@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Map Tool MapStore2</title>
 <meta name="author" content="GeoSolutions & Chef Studio" />
 <link rel="shortcut icon" href="favicon.ico">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
-<link href="../../theme/default/css/css.css" rel="stylesheet">
-<link href="../../theme/default/css/custom.css" rel="stylesheet">
+<link href="../../theme/default/css/less/theme.css" rel="stylesheet">
 <link href="../../theme/default/css/font.css" rel="stylesheet">
 <link href="../../theme/default/css/map.css" rel="stylesheet">
 
@@ -16,85 +16,83 @@
 </head>
 
 <body>
-<div class="sidebar shadow overflow">
+<div class="sidebar shadow">
 	<div class="close-sidebar float-left">
-    <button type="button" class="close-sidebar btn-default" data-dismiss="modal"><div class="glyphicon glyphicon-1-close"></div></button>
+     <button type="button" class="btn btn-default square-button no-border">
+    		<div class="glyphicon glyphicon-1-close"></div>
+     	</button>
 	</div>
     
     <!-- 3 buttons of work -->
+<div class="nav-working">
     <ul class="float-right">
         
         	<li>
-            <button type="button" class="btn btn-lg btn-primary square-button">
+            <button type="button" class="btn btn-primary square-button">
     		<div class="glyphicon glyphicon-1-layer"></div>
     		</button>
         	</li>
             <li class="divider-horiz"></li>
         	<li>
-            <button type="button" class="btn btn-lg btn-primary square-button">
+            <button type="button" class="btn btn-primary square-button">
     		<div class="glyphicon glyphicon-1-map"></div>
     		</button>
         	</li>
             <li class="divider-horiz"></li>
         	<li>
-            <button type="button" class="btn btn-lg btn-primary square-button">
+            <button type="button" class="btn btn-primary square-button">
     		<div class="glyphicon glyphicon-1-stilo"></div>
     		</button>
         	</li>
-            
-     </ul>
-    <div class="working floatstop">
-    	 <div class="title-tool">CHANGE BACKGROUND</div>
-       
-        <ul class="list-group">
+	</ul>
+</div> <!--nav-working -->
+<div class="floatstop"></div>         
+         <div class="title-tool">CHANGE BACKGROUND</div>
+         
+<div class="list-group">
+		
+        <ul>
         
-            <li class="divider"></li>
+        <li> <a href="#">Bing Aerial
+        <br/>
+        <div class="map-container"></div>
+        </a>
+        </li>
+        
+        <div class="divider"></div>
+        
+        <li> <a href="#">Open Street Map
+        <br/>
+        <div class="map-container"></div>
+        </a>
+        </li>
+        
+        <div class="divider"></div>
+        
+        <li> <a href="#">Mapquest Openstreetmap
+        <br/>
+        <div class="map-container"></div>
+        </a>
+        </li>
+        
+        <div class="divider"></div>
+        
+        <li> <a href="#">Google Terrain
+        <br/>
+        <div class="map-container"></div>
+        </a>
+        </li>
+        
+        <div class="divider"></div>
             
-            <li class="list-group-item">
-            Bing Aerial
-            <div class="map-container"></div>
-            </li>
-            
-           <li class="divider"></li>
+        </ul>
+        
            
-           <li class="list-group-item">
-            Open Street Map
-            <div class="map-container"></div> 
-           </li>
-           
-           <li class="divider"></li>
-           
-           <li class="list-group-item">
-            Mapquest Openstreetmap
-            <div class="map-container"></div> 
-           </li>
-           
-           <li class="divider"></li>
-           
-           <li class="list-group-item">
-            Google Terrain
-            <div class="map-container"></div> 
-           </li>
-           
-           <li class="divider"></li>
-           
-           <li class="list-group-item">
-            Google Roadmap
-            <div class="map-container"></div> 
-           </li>
-           
-           <li class="divider"></li>
-           
-           <li class="list-group-item">
-            Google Hybrid
-            <div class="map-container"></div> 
-           </li> 
-           
-       </ul>
-    	
-    </div>
-
 </div>
+    	
+
+
+</div><!-- side bar -->
     
 
 
